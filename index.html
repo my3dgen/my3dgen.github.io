@@ -105,7 +105,7 @@
 <body>
 
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -149,12 +149,16 @@
           <a class="navbar-item" href="#acknowledgements">
             Acknowledgements
           </a>
+          <a class="navbar-item" href="#BibTeX">
+            BibTeX
+          </a>
         </div>
       </div>
 
     </div>
   </div>
 </nav>
+
 
 <!-- authors -->
 <section class="hero">
@@ -163,6 +167,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">My3DGen: A Scalable Personalized 3D Generative Model</h1>
+          <h1 class="subtitle is-3 publication-subtitle">WACV2025</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://luchaoqi.com/">Luchao Qi</a><sup>1</sup>,</span>
@@ -220,13 +225,12 @@
               <!-- Code Link. -->
               <span class="link-block">
                 <a href=""
-                   class="external-link button is-normal is-rounded is-dark" disabled
-                   target="_blank">
+                   class="external-link button is-normal is-rounded is-dark" disabled>
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code (coming soon)</span>
-                  </a>
+                </a>
               </span>
               <!-- Supplementary Link. -->
               <!-- <span class="link-block">
@@ -790,11 +794,11 @@
             <span class="faq-question">Why personalize a GAN model using a few selfies instead of using only 1 selfie (image inversion)?</span>
           </summary>
           <p>
-            Inverting or overfitting to one single image can lead to identy drift when pose changes $i.e.$ it does not look like the same person when changing the pose (see image inversion results above). 
+            3D GAN inversion using one single image can lead to <strong>identity drift</strong> when pose changes $i.e.$ it does not look like the same person when changing the pose (see image inversion results above or see <a href="https://research.nvidia.com/labs/amri/projects/stable3d/">Stable3D</a> for more details). 
             <br> 
             More specifically, inversion technique can achieve the best pixel-wise reconstruction results <strong>under the same pose as the input image</strong> but may not be able to preserve the identity under different poses. Because the model is inferring faces using the knowledge learned from the pretrained prior (FFHQ) when the pose is different from the input image's pose. Thus it may either fail to reconstruct the face or reconstruct a different face under different poses.
             <br>
-            On the other hand, personalization is inferring the faces under different poses using the knowledge learned from training selfies - thus a we want to train a personalized prior.
+            On the other hand, personalization is inferring the faces under different poses using the knowledge learned from training selfies.
           </p>
         </details>
         <details>
@@ -814,6 +818,19 @@
           </p>
         </details>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- acknowledgements -->
+ <section class="section" id="acknowledgements">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Acknowledgements</h2>
+    <div class="content">
+      <p>
+        We thank Jun Myeong Choi, Akshay Paruchuri, and Nurislam Tursynbek for reviewing early drafts and suggesting improvements. We thank Tianlong Chen for providing helpful suggestions. 
+        <!-- This work was supported by the National Science Foundation (NSF) under grant number xxx. We also thank the UNC Research Computing for providing computing resources. -->
+      </p>
     </div>
   </div>
 </section>
