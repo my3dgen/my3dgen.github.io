@@ -1,0 +1,247 @@
+<html>
+<link>
+<title>My3DGen: A Scalable Personalized 3D Generative Model - Supplementary Material</title>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<style type="text/css">
+	l, body, #wrapper
+	{
+		background-color: #ffffff;
+		color: #000000;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	img
+	{
+		border: 0;
+	}
+	
+	td
+	{
+		text-align: center;
+		padding: 5px;
+	}
+	
+	.section
+	{
+		font-size: 40px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 10px;
+	}
+	
+	.subsection
+	{
+		font-size: 28px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.subsubsection
+	{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.navselected
+	{
+		color: #ff0000;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	
+	.navunselected
+	{
+		color: #4488ff;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	a:link {color: #4488ff; text-decoration: underline; }
+	a:active {color: #4488ff; text-decoration: underline; }
+	a:visited {color: #4488ff; text-decoration: underline; }
+	a:hover {color: #ff0000; text-decoration: none; }
+
+
+
+	.before,
+	.after {
+		margin: 0;
+	}
+
+	.before figcaption,
+	.after figcaption {
+		background: #fff;
+		border: 1px solid #c0c0c0;
+		border-radius: 12px;
+		color: #2e3452;
+		opacity: 0.8;
+		padding: 12px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		line-height: 100%;
+	}
+
+	.before figcaption {
+		left: 12px;
+	}
+
+	.after figcaption {
+		right: 12px;
+	}
+</style>
+<script
+	defer
+	src="static/js/index.js"
+></script>
+<link
+	rel="stylesheet"
+	href="static/css/styles.css"
+/>
+</head>
+<body>
+
+<center>
+
+
+<div class="section">My3DGen: A Scalable Personalized 3D Generative Model</div>
+<div class="subsubsection">Supplementary Material</div>
+
+<div>
+	<div class="subsubsection">1 minute teaser video.</div>
+	<br>
+	<video width="800" controls muted>
+		<source src="teasers/teaser.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+</div>
+<br>
+<br>
+<!-- <div>
+	<p>
+		<i><a href="https://en.wikipedia.org/wiki/Michelle_Obama" target="_blank">Michelle Obama</a></i>
+		is depicted in the teaser image for most of the downstream tasks.
+	</p>
+</div> -->
+
+<table style="margin-top: 20px;">
+<tr>
+	<td><a href="pages/inversion.html" target="_blank"><div class="navunselected" onmouseover="this.className='navselected';" onmouseout="this.className='navunselected';">
+		<img-comparison-slider hover="hover" width="300">
+			<figure slot="first" class="before">
+				<img src="teasers/inversion_before.jpg" width="300">
+				<figcaption>Before</figcaption>
+			</figure>
+			<figure slot="second" class="after">
+				<img src="teasers/inversion_after.jpg" width="300">
+				<figcaption>After</figcaption>
+			</figure>
+		</img-comparison-slider>
+		<br>Image Inversion</div>
+	</a></td>
+	<td><a href="pages/interpolation.html" target="_blank"><div class="navunselected" onmouseover="this.className='navselected';" onmouseout="this.className='navunselected';">
+		<img-comparison-slider hover="hover" width="300">
+			<figure slot="first" class="before">
+				<img src="teasers/interpolation_before.jpg" width="300">
+				<figcaption>Before</figcaption>
+			</figure>
+			<figure slot="second" class="after">
+				<img src="teasers/interpolation_after.jpg" width="300">
+				<figcaption>After</figcaption>
+			</figure>
+		</img-comparison-slider>
+		<br>Image Interpolation</div>
+	</a></td>
+    <td><a href="pages/synthesis.html" target="_blank"><div class="navunselected" onmouseover="this.className='navselected';" onmouseout="this.className='navunselected';">
+		<img-comparison-slider hover="hover" width="300">
+			<figure slot="first" class="before">
+				<img src="teasers/synthesis_before.jpg" width="300">
+				<figcaption>Before</figcaption>
+			</figure>
+			<figure slot="second" class="after">
+				<img src="teasers/synthesis_after.jpg" width="300">
+				<figcaption>After</figcaption>
+			</figure>
+		</img-comparison-slider>
+		<br>Image synthesis</div>	
+	</a></td>
+</tr>
+
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+
+<tr>
+	<td><a href="pages/enhancement.html" target="_blank"><div class="navunselected" onmouseover="this.className='navselected';" onmouseout="this.className='navunselected';">
+		<img-comparison-slider hover="hover" width="300">
+			<figure slot="first" class="before">
+				<img src="teasers/enhancement_before.jpg" width="300">
+				<figcaption>Before</figcaption>
+			</figure>
+			<figure slot="second" class="after">
+				<img src="teasers/enhancement_after.jpg" width="300">
+				<figcaption>After</figcaption>
+			</figure>
+		</img-comparison-slider>
+		<br>Image Enhancement</div>	
+	</a></td>
+	<td><a href="pages/semantic_editing.html" target="_blank"><div class="navunselected" onmouseover="this.className='navselected';" onmouseout="this.className='navunselected';">
+		<img-comparison-slider hover="hover" width="300">
+			<figure slot="first" class="before">
+				<img src="teasers/editing_before.jpg" width="300">
+				<figcaption>Before</figcaption>
+			</figure>
+			<figure slot="second" class="after">
+				<img src="teasers/editing_after.jpg" width="300">
+				<figcaption>After</figcaption>
+			</figure>
+		</img-comparison-slider>
+		<br>Semantic Editing</div>	
+	</a></td>
+
+	<td>
+		<a href="pages/failure_cases.html" target="_blank">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		  <div class="navunselected" style="text-align: center; display: flex; flex-direction: column; align-items: center;" onmouseover="this.className='navselected';" onmouseout="this.className='navunselected';">
+			<img src="./results/failures/michelle/interpolate_video_test_5_network-snapshot-000500_image_0.479.jpg" style="max-width: 100%; height: auto;" width="300">
+			<!-- <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/wcAAwAB/epUDwAAAABJRU5ErkJggg==" width="300"> -->
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			Failure Cases
+		  </div>
+		</a>
+	  </td>
+</tr>
+
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+
+
+</body>
+</html>
